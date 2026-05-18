@@ -9,6 +9,7 @@ pub fn detect_zen_root() -> Result<PathBuf> {
     let candidates = [
         home.join(".zen"),
         home.join(".var/app/app.zen_browser.zen/.zen"),
+        home.join(".config/zen"),
     ];
 
     for path in &candidates {
